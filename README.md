@@ -48,3 +48,4 @@ There are some of features coming:
 - Tests
 - Dockerfile, docker-compose and docker-swarm configurations
 - Code documentation templates
+- PM2 config
