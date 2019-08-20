@@ -1,29 +1,50 @@
-# README
+# [NestJS](https://nestjs.com) BOILERPLATE
 
-This README would normally document whatever steps are necessary to get your application up and running.
+## Description
 
-### What is this repository for?
+This is back-end template based on NestJS framework.
 
-- Quick summary
-- Version
-- [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+### Features
 
-### How do I get set up?
+- Authentication/Authorization (JWT)
+- Swagger API templates
+- Logger based on Winston
+- Environment config service
+- TypeORM
 
-- Summary of set up
-- Configuration
-- Dependencies
-- Database configuration
-- How to run tests
-- Deployment instructions
+### Environment Configuration
 
-### Contribution guidelines
+Config service read all environment variables from `.env` file.
+Copy `.env.example` to `.env` for configure your app in Dev mode. For example use
 
-- Writing tests
-- Code review
-- Other guidelines
+```bash
+cp .env.example .env
+```
 
-### Who do I talk to?
+For production mode use `export` command.
 
-- Repo owner or admin
-- Other community or team contact
+### Running the app
+
+```bash
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+```
+
+### Test
+
+Tests will be added ASAP
+
+### Road map
+
+There are some of features coming:
+
+- Registration with e-mail confirmation based on SendGrid API
+- Tests
+- Dockerfile, docker-compose and docker-swarm configurations
+- Code documentation templates
